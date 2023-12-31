@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Burak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-31 02:50:46 &#214;S"/>
+        <attribute name="created" value="QnVyYWs7REVTS1RPUC1HSk1STjkyOzIwMjMtMTItMzE7MDI6MTI6Mzggw5ZTOzI5ODc="/>
+        <attribute name="edited" value="QnVyYWs7REVTS1RPUC1HSk1STjkyOzIwMjMtMTItMzE7MDI6NTA6NDYgw5ZTOzM7MzA5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="parcaSayisi, i" type="Integer" array="False" size=""/>
+            <declare name="altSinir, &#252;stSinir, parcaGenisligi, x, fonksiyonDegeri, toplamAlan" type="Real" array="False" size=""/>
+            <output expression="&quot;Parca sayisini giriniz: &quot;" newline="False"/>
+            <input variable="parcaSayisi"/>
+            <output expression="&quot;Alt siniri giriniz: &quot;" newline="False"/>
+            <input variable="altSinir"/>
+            <output expression="&quot;&#220;st siniri giriniz: &quot;" newline="False"/>
+            <input variable="&#252;stSinir"/>
+            <assign variable="parcaGenisligi" expression="(&#252;stSinir-altSinir)/parcaSayisi"/>
+            <assign variable="toplamAlan" expression="0"/>
+            <for variable="i" start="1" end="parcaSayisi" direction="inc" step="1">
+                <assign variable="x" expression="altSinir+(i*parcaGenisligi)"/>
+                <assign variable="fonksiyonDegeri" expression="(3*x*x)+(2*x)"/>
+                <assign variable="toplamAlan" expression="toplamAlan+(fonksiyonDegeri*parcaGenisligi)"/>
+            </for>
+            <output expression="altSinir &amp; &quot; ve &quot; &amp; &#252;stSinir &amp; &quot; araliginda sag toplamlar y&#246;ntemiyle integralin degeri: &quot; &amp; toplamAlan" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

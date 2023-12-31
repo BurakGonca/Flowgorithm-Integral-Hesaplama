@@ -1,0 +1,9 @@
+// Flowgorithm programi ile belirli bir aralik kullanicidan istenilerek sag toplamlar yöntemiyle integral hesabi yaptiran algoritma.
+
+
+
+//  Sag toplamlar, belirli integrali yaklaşık olarak bulmak için kullanılan bir yöntemdir. Bu yöntemde, aralık eşit parçalara bölünür ve her parçanın sağ ucundaki fonksiyon değeri ile çarpılır.
+
+
+// f(x)=3(x^2)+2x fonksiyonunun belirli integralini;
+verilen [a,b] aralığında sağ toplamlar ile hesaplayan algoritmayi cizmeye calistim.
